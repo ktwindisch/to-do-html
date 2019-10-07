@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task Manager</title>
+    <meta property="og:title" content="CodingPhase - Learn To Code and Get Paid ASAP!">
+    <meta name="description" content="Learn how to code from the best platform by building real projects that will help you land the dream job and get a high paying salary">
+    <meta property="og:description" content="Learn how to code from the best platform by building real projects that will help you land the dream job and get a high paying salary">
+    <meta property="og:image" content="https://codingphase.com/img/websitethumb.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="CodingPhase LLC">
+    <meta name="twitter:image:alt" content="Learn how to code from one of the best platforms online.">
+    <meta name="twitter:site" content="@codingphase">
+    <meta property="og:url" content="https://codingphase.com">
+    <link rel="canonical" href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ad38f1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/iconsfavicon-16x16.png">
+    <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="all-tasks">
+        <section class="header">
+          <div class="top">
+        <div class="logo">
+          Task Manager
+        </div>
+        <div class="tasks-total">
+          <div class="task"><span class="number">6</span> Tasks</div>
+          <div class="task"><span class="number">3</span> Completed</div>
+        </div>
+
+        <div class="add-circle">
+          <i class="fa fa-plus-circle"></i>
+        </div>
+          </div>
+      </section>
+
+      <section class="content-area">
+        <div class="container">
+          <div class="tasks-container">
+            <div class="task-box">
+              <div class="title">
+                Instagram Storytime
+              </div>
+              <div class="date">
+                Created: October 1, 2019
+              </div>
+              <div class="check-box">
+                <i class="fa fa-check"></i>
+              </div>
+            </div>
+
+            <div class="task-box">
+              <div class="title">
+                Eat
+              </div>
+              <div class="date">
+                Created: October 1, 2019
+              </div>
+              <div class="check-box">
+                <i class="fa fa-check"></i>
+              </div>
+            </div>
+            <div class="task-box">
+              <div class="title">
+                Code
+              </div>
+              <div class="date">
+                Created: October 1, 2019
+              </div>
+              <div class="check-box">
+                <i class="fa fa-check"></i>
+              </div>
+            </div>
+            <div class="task-box">
+              <div class="title">
+                Sleep
+              </div>
+              <div class="date">
+                Created: October 1, 2019
+              </div>
+            </div>
+            <div class="task-box">
+              <div class="title">
+                Clean Room
+              </div>
+              <div class="date">
+                Created: October 1, 2019
+              </div>
+            </div>
+            <div class="task-box">
+              <div class="title">
+                Clean Room
+              </div>
+              <div class="date">
+                Created: October 1, 2019
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="task-form">
+        <div class="close-btn">
+          <i class="fa fa-times"></i>
+        </div>
+        <form>
+          <h3> Add a task</h3>
+          <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" name="title">
+          </div>
+          <div class="form-group">
+            <label for="title">Category:</label>
+            <input type="text" name="title">
+          </div>
+          <div class="form-group">
+            <label for="title">Notes:</label>
+            <textarea name="notes"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Add New Task</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      $('.add-circle').on('click', function(){
+        $('.task-form').addClass('active')
+      })
+      $('.task-form .close-btn').on('click', function(){
+        $('.task-form').removeClass('active')
+    })
+  })
+  </script>
+  </body>
+</html>
